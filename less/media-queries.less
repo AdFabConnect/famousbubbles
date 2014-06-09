@@ -1,0 +1,74 @@
+
+html, body{
+  font-size: 12px;
+  color: #FFF;
+}
+
+@media screen and (max-width : 700px)  {
+  html, body{
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width : 600px)  {
+  html, body{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width : 500px)  {
+  html, body{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width : 400px)  {
+  html, body{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width : 300px)  {
+  html, body{
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width : 200px)  {
+  html, body{
+    font-size: 9px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : portrait) {
+    div.zoom-in .image{
+      background-position: 40% 100%;
+    }
+    .step_end .zoom-in .text{
+      top: 73%;
+    }
+}
+
+/* iphone 4 (portrait) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) {
+  body {
+    .zoom-in {
+      .image{
+        background-position: 40% 50%;
+      }
+      .text {
+        top: 80%;
+        width: 60%;
+        margin-left: 20%;
+      }
+    }
+  }
+}
+

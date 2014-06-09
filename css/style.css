@@ -1,0 +1,310 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+@font-face {
+  font-family: "Univers-light";
+  src: url('UniversLTStd-LightCn.eot');
+  src: url('UniversLTStd-LightCn.eot?#iefix') format('embedded-opentype'), url('UniversLTStd-LightCn.svg#Univers-light') format('svg'), url('UniversLTStd-LightCn.woff') format('woff'), url('UniversLTStd-LightCn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Univers-bold";
+  src: url('UniversLTStd-BoldCn.eot');
+  src: url('UniversLTStd-BoldCn.eot?#iefix') format('embedded-opentype'), url('UniversLTStd-BoldCn.svg#Univers-bold') format('svg'), url('UniversLTStd-BoldCn.woff') format('woff'), url('UniversLTStd-BoldCn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  font-size: 12px;
+  color: #FFF;
+}
+@media screen and (max-width: 700px) {
+  html,
+  body {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 500px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 300px) {
+  html,
+  body {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 200px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  div.zoom-in .image {
+    background-position: 40% 100%;
+  }
+  .step_end .zoom-in .text {
+    top: 73%;
+  }
+}
+/* iphone 4 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  body .zoom-in .image {
+    background-position: 40% 50%;
+  }
+  body .zoom-in .text {
+    top: 80%;
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+/*
+ * Main style
+ */
+/* Lock landscape orrientation */
+.lock {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  color: white;
+  font-size: 25px;
+}
+@media screen and (orientation: landscape) {
+  .lock {
+    display: table;
+  }
+  .lock p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .zoom-in {
+    display: none !important;
+  }
+}
+/* Background */
+body,
+.lock {
+  background: #c62d27;
+  background: -moz-radial-gradient(center, ellipse cover, #c62d27 0%, #c62d27 50%, #681100 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #c62d27), color-stop(50%, #c62d27), color-stop(100%, #681100));
+  background: -webkit-radial-gradient(center, ellipse cover, #c62d27 0%, #c62d27 50%, #681100 100%);
+  background: -o-radial-gradient(center, ellipse cover, #c62d27 0%, #c62d27 50%, #681100 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #c62d27 0%, #c62d27 50%, #681100 100%);
+  background: radial-gradient(ellipse at center, #c62d27 0%, #c62d27 50%, #681100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d27', endColorstr='#681100', GradientType=1);
+}
+/* Main container */
+.bubbleImage {
+  display: none;
+}
+#bubbleCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, sans-serif;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-perspective: 0;
+  perspective: none;
+  overflow: hidden;
+}
+.famous-container,
+.famous-container-surface,
+.famous-group {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: visible;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  pointer-events: none;
+}
+.famous-group {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.famous-surface {
+  position: absolute;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: flat;
+  transform-style: flat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events: auto;
+}
+/* animation stuff goes here */
+/* Animate bottle */
