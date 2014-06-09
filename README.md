@@ -1,5 +1,7 @@
 Bubbles with Famo.us Physic Engine 23/05/2014
 
+Visit the main Famo.us repo at http://github.com/famous/famous. If you're a fan, please support Famo.us with a star.
+
 GENERAL NOTES
 -------------
 
