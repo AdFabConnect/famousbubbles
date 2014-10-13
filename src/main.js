@@ -14,8 +14,8 @@ define(function (require, exports, module, start)
     var Modifier       = require('famous/core/Modifier');
     var Transitionable = require('famous/transitions/Transitionable');
 
-    var Bubble = require('app/Bubble');
-    var NonBounce = require('app/NonBounce');
+    var Bubble = require('app/bubble');
+    var NonBounce = require('app/nonBounce');
 
     var currentStep = 0;
     var windowWidth = parseInt(window.innerWidth);
